@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title> PULLSCEERN</title>
+        <link rel="stylesheet" href="screen.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+        <div class="container"> 
+            <form class="box">
+                <h1>what are you looking for?</h1>
+                <input type="text" placeholder="type...">
+                <input type="submit" value="serch">
+            </form> 
+            <div class="search">
+                <div class="icon"> </div>
+                <form>
+                    <input type="text" placeholder= "what are you looking for?">
+                </form>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $('.icon').click(function(){
+                    $('.search').toggleClass('active');
+                })
+            });
+        </script>
+       
+    </body>
+
+</html>
